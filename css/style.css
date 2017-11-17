@@ -145,31 +145,111 @@ figcaption {
 
 .gallery {
 	display: flex;
-	flex-direction: row;
+	/*flex-direction: row; -- gawing row sa large viewport*/
+	flex-direction: column;
 }
 
 .gallery div {
-	height: 100px;
+	height: 320px;
 }
 
 .gallery .pic1 {
-	background-color: #F03434;
+	background: url(../img/chicken.jpg) no-repeat center center;
+	background-size: cover;
 }
 .gallery .pic2 {
-	background-color: #947CB0;
+	background: url(../img/toast.jpg) no-repeat center center;
+	background-size: cover;
 }
 .gallery .pic3 {
-	background-color: #446CB3;
+	background: url(../img/fries.jpg) no-repeat center center;
+	background-size: cover;
 }
 .gallery .pic4 {
-	background-color: #26A65B;
+	background: url(../img/frappe.jpg) no-repeat center center;
+	background-size: cover;
 }
 .gallery .pic5 {
-	background-color: #F4D03F;
+	background: url(../img/carbonara.jpg) no-repeat center center;
+	background-size: cover;
 }
 .gallery .pic6 {
-	background-color: #E87E04;
+	background: url(../img/pasta.jpg) no-repeat center center;
+	background-size: cover;
 }
 .gallery .pic7 {
-	background-color: #95A5A6;
+	background: url(../img/cake.jpg) no-repeat center center;
+	background-size: cover;
 }
+
+/*group1, group2, group3 must have width: 33.33%; on large viewport*/
+.group1 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.group1-1 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.group2 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.group3 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.gallery .pic1 {
+	width: 50%;
+}
+.gallery .pic2 {
+	width: 50%;
+}
+.gallery .pic3 {
+	width: 100%;
+}
+.gallery .pic4 {
+	width: 50%;
+}
+.gallery .pic5 {
+	width: 50%;
+}
+.gallery .pic6 {
+	width: 100%;
+}
+.gallery .pic7 {
+	width: 100%;
+}
+
+/*------------Discover styles------------*/
+
+.discover {
+	background-color: #282f35;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.shop-btn:hover, .shop-btn:visited, .shop-btn:link, .shop-btn:active
+{
+    text-decoration: none;
+}
+
+.shop-btn {
+	border: solid 1px #bbb;
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    padding: 15px 15px 15px 15px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+/*------------Contact styles------------*/
